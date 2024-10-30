@@ -1,0 +1,75 @@
+#conteneur1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 100px;
+    width: 50%;
+    margin: auto;
+
+}
+
+#conteneur1 div {
+    padding: 10px;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#conteneur1 div:nth-child(odd) {
+    background-color: pink;
+}
+
+#conteneur1 div:nth-child(even) {
+    background-color: turquoise;
+}
+
+#conteneur2{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns:1fr 2fr 3fr ;
+    grid-template-rows: repeat(3,1fr);
+    width: 50%;
+    margin: auto;
+}
+#conteneur2 div{
+    padding: 10px;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+}
+#conteneur2 div:nth-child(odd) {
+    background-color: pink;
+}
+
+#conteneur2 div:nth-child(even) {
+    background-color: turquoise;
+}
+
+#conteneur3{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns:1fr 2fr 3fr ;
+    grid-template-rows: 2fr repeat(2,1fr);
+    width: 50%;
+    margin: auto;
+    grid-gap: 3px;
+}
+#conteneur3 div{
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: top;
+    
+}
+#conteneur3 div:nth-child(odd) {
+    background-color: pink;
+}
+
+#conteneur3 div:nth-child(even) {
+    background-color: turquoise;
+}
