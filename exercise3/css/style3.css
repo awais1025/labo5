@@ -1,46 +1,63 @@
-#conteneur{
+#conteneur {
     display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: repeat(6,1fr);
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: flex-start;
+
     gap: 3px;
-    grid-template-areas: 
-    "header header header header"
-    "nav    nav       nav   nav"
-    "aside main main main"
-    "aside main main main "
-    "aside main main main"
-    "footer footer footer footer";
+    grid-template-areas:
+        "header header header header"
+        "nav    nav       nav   nav"
+        "aside main main main"
+        "aside main main main "
+        "aside main main main"
+        "footer footer footer footer";
     width: 30%;
-    height: 600px;
+    height: 650px;
     margin: auto;
     grid-gap: 3px;
-  text-align: center;
-  
+
+
 }
 
-header{
+aside,
+main {
+    display: grid;
+    justify-content: start;
+    padding: 25px
+}
+
+header,
+nav,
+footer {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding: 25px
+}
+
+header {
     grid-area: header;
-    background-color:turquoise;
-    
+    background-color: turquoise;
+
 }
 
-nav{
+nav {
     grid-area: nav;
     background-color: turquoise;
 }
 
-aside{
+aside {
     grid-area: aside;
     background-color: turquoise;
 }
 
-main{
-    grid-area:main ;
-    background-color: turquoise;
-}
-footer{
-    grid-area: footer;
+main {
+    grid-area: main;
     background-color: turquoise;
 }
 
+footer {
+    grid-area: footer;
+    background-color: turquoise;
+}
