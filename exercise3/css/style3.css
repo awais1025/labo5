@@ -1,0 +1,46 @@
+#conteneur{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    justify-content: center;
+    gap: 3px;
+    grid-template-areas: 
+    "header header header header"
+    "nav    nav       nav   nav"
+    "aside main main main"
+    "aside main main main "
+    "aside main main main"
+    "footer footer footer footer";
+    width: 30%;
+    height: 600px;
+    margin: auto;
+    grid-gap: 3px;
+  text-align: center;
+  
+}
+
+header{
+    grid-area: header;
+    background-color:turquoise;
+    
+}
+
+nav{
+    grid-area: nav;
+    background-color: turquoise;
+}
+
+aside{
+    grid-area: aside;
+    background-color: turquoise;
+}
+
+main{
+    grid-area:main ;
+    background-color: turquoise;
+}
+footer{
+    grid-area: footer;
+    background-color: turquoise;
+}
+
